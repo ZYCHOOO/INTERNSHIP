@@ -50,7 +50,7 @@ git merge dev
 ```
 git remote -v  // 查看远端地址
 git remote  //查看远端仓库名
-git remote set-url origin 仓库地址名
+git remote set-url origin address
 ```
 + ***我已经commit但未push，现在需要撤回操作***  
 问题的描述如上，解决办法如下  
