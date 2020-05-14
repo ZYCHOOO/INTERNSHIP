@@ -43,9 +43,9 @@ git remote set-url origin 仓库地址名
 ```
 + ***我已经commit但未push，现在需要撤回操作***  
 问题的描述如上，解决办法如下
-```
-git log // 此时会打开提交记录
-git reset ID // 通过上面找到的ID
-```
+`git log // 此时会打开提交记录`  
+![gitlog](https://github.com/ZYCHOOO/INTERNSHIP/blob/master/src/assets/images/gitLog.jpg)
+`git reset ID // 通过上面找到的ID`
+
 
 
