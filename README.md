@@ -1,14 +1,15 @@
 # 前端实习
 ##### 最近实习的第一个项目上线了，有一点空闲时间，记录一下一个月来的坑。先记录一下git吧，还是一个团队项目开发中比较常见的。
 2020/05/13-切换分支/拉取代码/合并代码/切换仓库  
-2020/05/14-开始项目/上传代码/常见的问题
+2020/05/14-开始项目/上传代码/常见的问题  
+2020/05/18-本地创建新的分支/创建新的远程分支
 ---
 ## 关于git的基本操作
 + ***开始项目***  
 开始项目了，我们要从仓库中将整个项目放到本地。我们以这个demo为例，首先我们要找到clone，复制地址  
 ![clone](https://github.com/ZYCHOOO/INTERNSHIP/blob/master/src/assets/images/clone.png)  
 ```
-git clone address  
+git clone [url]  
 ```
 
 + ***切换分支***  
@@ -43,6 +44,14 @@ git checkout dev-deploy
 git merge dev
 ```
 
++***本地创建新的分支/创建新的远程分支***  
+```
+// 从已有的分支上创建一个新的分支
+git checkout -b branch-name
+// 创建新的远程分支
+git push --set-upstream origin branch-name
+```
+
 
 ## 常见的问题  
 + ***切换仓库***  
@@ -50,7 +59,7 @@ git merge dev
 ```
 git remote -v  // 查看远端地址
 git remote  //查看远端仓库名
-git remote set-url origin address
+git remote set-url origin [url]
 ```
 + ***我已经commit但未push，现在需要撤回操作***  
 问题的描述如上，解决办法如下  
