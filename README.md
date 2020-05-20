@@ -50,7 +50,7 @@ git checkout dev-deploy
 git merge dev
 ```
 
-+***本地创建新的分支/创建新的远程分支***  
++ ***本地创建新的分支/创建新的远程分支***  
 ```
 // 从已有的分支上创建一个新的分支
 git checkout -b branch-name
@@ -90,6 +90,7 @@ git push -f
 
 ## commit规范  
 如上文所提到的，commit需要规范，这样可以让小组的其他成员更加明了地看到你的修改内容。团队项目的话规范是十分重要的，所以要养成一个好的习惯（我也在ing）  
+更详细的git commit规范[详见](https://mp.weixin.qq.com/s/8oWsj_ipp73crD_vg58LeQ) 
 字段|详细
 :---:|:---:
 fix|新增feature
@@ -102,14 +103,13 @@ test|测试用例，包括单元测试、集成测试
 chore|改变构建流程、或者增加依赖库、工具等
 revert|版本回滚  
 
-    更详细的git commit规范[详见](https://mp.weixin.qq.com/s/8oWsj_ipp73crD_vg58LeQ)  
 ---  
 ##### 经历了一个星期的摸爬滚打，终于对eslint代码格式化有了更好的认识。记录一下在eslint代码规范化中碰到的坑。  
 + 关于eslint  
 + 项目中eslint的相关配置
 ---
 ## 关于eslint  
-ESLint是一个用来识别 ECMAScript 并且按照规则给出报告的代码检测工具，使用它可以避免低级错误和统一代码的风格。 
+ESLint是一个用来识别 ECMAScript 并且按照规则给出报告的代码检测工具，使用它可以避免低级错误和统一代码的风格。   
 更多的ESlint前往[官方文档](https://eslint.bootcss.com)
 
 ## eslint配置
