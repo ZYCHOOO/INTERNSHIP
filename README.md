@@ -3,6 +3,7 @@
 2020/05/14-开始项目/上传代码/常见的问题  
 2020/05/18-本地创建新的分支/创建新的远程分支/commit规范  
 2020/05/19-eslint简介  
+2020/05/20-eslint配置
 ---
 ##### 最近实习的第一个项目上线了，有一点空闲时间，记录一下一个月来的坑。先记录一下git吧，还是一个团队项目开发中比较常见的。  
 + 关于git的基本操作  
@@ -108,14 +109,38 @@ revert|版本回滚
 + 项目中eslint的相关配置
 ---
 ## 关于eslint  
-ESLint是一个用来识别 ECMAScript 并且按照规则给出报告的代码检测工具，使用它可以避免低级错误和统一代码的风格。  
+ESLint是一个用来识别 ECMAScript 并且按照规则给出报告的代码检测工具，使用它可以避免低级错误和统一代码的风格。 
+更多的ESlint前往[官方文档](https://eslint.bootcss.com)
 
-## 项目中eslint的相关配置  
+## eslint配置
 如果项目在初始化的时候没有安装eslint模块，在进行clone操作到本地后  
 ```
 npm install eslint babel-eslint
 eslint --init
 ```
+eslintrc.js的内容可以直接引用本项目   
+![config](https://github.com/ZYCHOOO/INTERNSHIP/blob/master/src/assets/images/config.png)  
+![configContent](https://github.com/ZYCHOOO/INTERNSHIP/blob/master/src/assets/images/configContent.png)  
+```
+// Use Eslint Loader?
+// If true, your code will be linted during bundling and
+// linting errors and warnings will be shown in the console.
+useEslint: true,
+// If true, eslint errors and warnings will also be shown in the error overlay
+// in the browser.
+showEslintErrorsInOverlay: false,
+```
+
+![pkgjson](https://github.com/ZYCHOOO/INTERNSHIP/blob/master/src/assets/images/pkgjson.png)  
+![pkgjsonContent](https://github.com/ZYCHOOO/INTERNSHIP/blob/master/src/assets/images/pkgjsonContent.png)  
+```
+"lint": "eslint --ext .js,.vue src --fix",  
+```
+
+
+
+    
+
 
 
 
