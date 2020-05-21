@@ -3,7 +3,8 @@
 2020/05/14-开始项目/上传代码/常见的问题  
 2020/05/18-本地创建新的分支/创建新的远程分支/commit规范  
 2020/05/19-eslint简介  
-2020/05/20-eslint配置
+2020/05/20-eslint配置  
+2020/05/21-eslint配置(补充)  
 ---
 ##### 最近实习的第一个项目上线了，有一点空闲时间，记录一下一个月来的坑。先记录一下git吧，还是一个团队项目开发中比较常见的。  
 + 关于git的基本操作  
@@ -135,6 +136,12 @@ showEslintErrorsInOverlay: false,
 ![pkgjsonContent](https://github.com/ZYCHOOO/INTERNSHIP/blob/master/src/assets/images/pkgjsonContent.png)  
 ```
 "lint": "eslint --ext .js,.vue src --fix",  
+```
+在File>>preferences>>settings里面进行设置
+```
+"eslint.options": {
+		"extensions": [".js",".vue"]
+},
 ```
 
 
