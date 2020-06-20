@@ -94,7 +94,7 @@ git push -f
 更详细的git commit规范[详见](https://mp.weixin.qq.com/s/8oWsj_ipp73crD_vg58LeQ) 
 字段|详细
 :---:|:---:
-fix|新增feature
+feat|新增feature
 fix|修复bug
 docs|仅仅修改了文档，如readme.md
 style|仅仅是对格式进行修改
